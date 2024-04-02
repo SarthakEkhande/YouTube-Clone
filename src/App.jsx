@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 import Body from './components/Body'
 import Demo from './components/Demo'
+import Demo2 from './components/Demo2'
 import Header from './components/Header'
 import MainContainer from './components/MainContainer'
 import Watchpage from './components/Watchpage'
@@ -22,9 +23,12 @@ const appRouter=createBrowserRouter([{
    },
    {
     path:"demo",
-    element: <Demo />
+    element:<><Demo/><Demo2/></> 
+   },
+   {
+   path:"/demo2",
+   element:""
    }
-
 ]
 }
 ])
